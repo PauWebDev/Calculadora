@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap');
+* {
+ box-sizing: border-box;
+}
+
+:root {
+  --color-fondo: #dfbf4d;
+  --color-operadores: #4682B4;
+  --color-texto: #f1f1f5;
+  --color-numeros-fondo-calc: #cecece;
+  --color-separador: #7a7a7a;
+}
+body,
+html {
+ font-family: 'Roboto', sans-serif;
+ display: flex;
+ justify-content: space-around;
+ align-items: center;
+ flex-direction: column;
+ width: 100vw;
+ height: 100vh;
+ background-color: var(--color-fondo);
+ font-size: 15px;
+ overflow: hidden;
+ min-width: 360px;
+ max-width: 1920px;
+}
+
+.header{
+  text-align: center;
+  font-size: 1.2em;
+}
+
+.header h1, .header h3{
+  font-weight: 300;
+}
+
+.header h1 {
+  border-bottom: 5px solid var(--color-separador);
+}
+.container {
+ width: 100%;
+ height: 100%;
+ min-height: 250px;
+ max-height: 500px;
+ min-width: 160px;
+ max-width: 350px;
+ padding: 20px;
+ background-color: var(--color-numeros-fondo-calc);
+ border: none;
+ box-shadow: 0 0 2px #7a7a7a;
+ display: inline-grid;
+ grid-gap: 5px;
+ /* Establece el tamaño de cada columna */
+ grid-template-columns: repeat(4, 1fr);
+ /* Establece el tamaño de cada fila */
+ grid-template-rows: repeat(6, 1fr);
+ /* Indica la disposición de las áreas en el grid. Cada texto entre comillas simboliza una fila. */
+ grid-template-areas:
+  "number-result number-result number-result number-result"
+  "number-reset number-divi number-multi number-rest"
+  "number7 number8 number9 number-suma"
+  "number4 number5 number6 number-suma"
+  "number1 number2 number3 number-result-btn"
+  "number0 number0 number-point number-result-btn";
+}
+/* Indica el nombre del área. Se usa sobre ítems hijos del grid. */
+.number-result {
+ grid-area: number-result;
+ font-weight: bolder !important;
+ text-align: right;
+ background: #f1f1f1 !important;
+ font-size: 2em !important;
+ padding-right: 30px;
+}
+.number.divi {
+ grid-area: number-divi;
+}
+.number-multi {
+ grid-area: number-multi;
+}
+.number-rest {
+ grid-area: number-rest;
+}
+.number-suma {
+ grid-area: number-suma;
+}
+.number-point {
+ grid-area: number-point;
+}
+.number-result-btn {
+ grid-area: number-result-btn;
+}
+.number-reset {
+ grid-area: number-reset;
+}
+.number1 {
+ grid-area: number1;
+}
+.number2 {
+ grid-area: number2;
+}
+.number3 {
+ grid-area: number3;
+}
+.number4 {
+ grid-area: number4;
+}
+.number5 {
+ grid-area: number5;
+}
+.number6 {
+ grid-area: number6;
+}
+.number7 {
+ grid-area: number7;
+}
+.number8 {
+ grid-area: number8;
+}
+.number9 {
+ grid-area: number9;
+}
+.number0 {
+ grid-area: number0;
+}
+.calc-item {
+ background-color: #545454;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ font-size: 1.2rem;
+ font-weight: 100;
+ color: rgb(192, 192, 192);
+ border: none;
+}
+.calc-number {
+    font-weight: 700;   
+}
+.operador {
+  background-color: var(--color-operadores);
+}
+footer p, footer p a {
+ color: #f1f1f1;
+ text-decoration: none;
+
+}

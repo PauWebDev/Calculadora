@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=7">
+    <meta name="description" content="Calculadora">
+    <meta name="keywords" content="calculadora, calculator, suma, resta, multiplicación, buttonisión">
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.0/css/all.css"
+        integrity="sha384-OLYO0LymqQ+uHXELyx93kblK5YIS3B2ZfLGBmsJaUyor7CpMTBsahDHByqSuWW+q" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>calculator</title>
+</head>
+
+<body>
+
+    <header class="header">
+        <h1>Calculadora simple en HTML, CSS y JavaScript</h1>
+        <h3>Adelante, pruebala</h3>
+    </header>
+
+    <main class="container">
+        <input class="calc-item number-result operador" type="text" placeholder="|" id="resultadoPantalla">
+        <button class="calc-item number-divi operador" onclick="numeracion('/')">/</button>
+        <button class="calc-item number-multi operador" onclick="numeracion('*')">*</button>
+        <button class="calc-item number-rest operador" onclick="numeracion('-')">-</button>
+        <button class="calc-item number-suma operador" onclick="numeracion('+')">+</button>
+        <button class="calc-item number-point operador" onclick="numeracion('.')">.</button>
+        <button class="calc-item number-reset operador" onclick="limpiar()"">C</button>
+        <button class=" calc-item calc-number number1" onclick="numeracion('1')">1</button>
+        <button class="calc-item calc-number number2" onclick="numeracion('2')">2</button>
+        <button class="calc-item calc-number number3" onclick="numeracion('3')">3</button>
+        <button class="calc-item calc-number number4" onclick="numeracion('4')">4</button>
+        <button class="calc-item calc-number number5" onclick="numeracion('5')">5</button>
+        <button class="calc-item calc-number number6" onclick="numeracion('6')">6</button>
+        <button class="calc-item calc-number number7" onclick="numeracion('7')">7</button>
+        <button class="calc-item calc-number number8" onclick="numeracion('8')">8</button>
+        <button class="calc-item calc-number number9" onclick="numeracion('9')">9</button>
+        <button class="calc-item calc-number number0" onclick="numeracion('0')">0</button>
+        <button class="calc-item number-result-btn operador" onclick="mostrarResultado()">=</button>
+
+    </main>
+    <footer>
+        <p>Proyecto creado por <a href="https://github.com/PauWebDev" target="_blank"><i class="fab fa-github"></i> Mi
+                GitHub</a></p>
+    </footer>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
